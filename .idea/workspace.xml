@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc735d45-05cd-40a0-ad3a-110129354e12" name="Changes" comment="develop: JSX, styles, creation of first components">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/content/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/footer/__copyright/footer__copyright.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/footer/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__delete-button/gallery__delete-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__description/gallery__description.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__item/gallery__item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__like/__like-button/_active/gallery__like-button_active.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__like/__like-button/gallery__like-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__like/__like-counter/gallery__like-counter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__like/gallery__like.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__photo/gallery__photo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__photos/gallery__photos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__title/gallery__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/gallery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/header/__logo/header__logo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/header/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/page/page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__close-button/popup__close-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__container/popup__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__form/popup__form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__input/_type-error/popup__input_type-error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__input/popup__input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__photo-caption/popup__photo-caption.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__photo-container/popup__photo-container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__photo-item/popup__photo-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__photo/popup__photo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__save/_inactive/popup__save_inactive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__save/popup__save.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__text-error/_visible/popup__text-error_visible.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__text-error/popup__text-error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__title/popup__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/_opened/popup_opened.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/_place-photo/popup_place-photo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/_place/popup_place_photo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/popup/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__about/profile__about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__data/profile__data.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__info/profile__info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__name/profile__name.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__pic/__pic-avatar/profile__pic-avatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__pic/__pic-button/profile__pic-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__pic/profile__pic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__text/profile__text.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/blocks/profile/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/components/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/components/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/add-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/close-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/close-smallicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/delete-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/edit-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/header-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/like-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/like-button_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/images/profile-image.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Black.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/vendor/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Kj7DH7UOQIPAN6LJmegRff3n9n" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/anastasiakosataya/Praktikum/dev/mesto-react/mesto-react/src",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ide.date.format",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mesto-react/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mesto-react/src/components" />
+      <recent name="$PROJECT_DIR$/mesto-react/node_modules" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/mesto-react/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc735d45-05cd-40a0-ad3a-110129354e12" name="Changes" comment="" />
+      <created>1674476016422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674476016422</updated>
+      <workItem from="1674476018054" duration="502000" />
+      <workItem from="1680669375981" duration="2363000" />
+      <workItem from="1680849506303" duration="9328000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1680669425632</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680669425633</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="develop: JSX, styles, creation of first components" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop: JSX, styles, creation of first components" />
+  </component>
+</project>
