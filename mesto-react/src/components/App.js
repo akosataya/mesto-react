@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import '../index.css';
 import Main from './Main';
 import Header from './Header';
@@ -5,11 +6,31 @@ import Footer from './Footer';
 import PopupWithForm from "./PopupWithForm";
 
 function App() {
+  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
+  const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
+  const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
+
+  const handleEditProfileClick = () => {
+    setIsEditProfilePopupOpen(true);
+  }
+
+  const handleAddPlaceClick = () => {
+    setIsAddPlacePopupOpen(true);
+  }
+
+  const handleEditAvatarClick = () => {
+    setIsEditAvatarPopupOpen(true);
+  }
+
   return (
     <div className='App'>
       <div className='page'>
         <Header />
-        <Main />
+        <Main
+            onEditProfile={handleEditProfileClick}
+            onEditAvatar={handleEditAvatarClick}
+            onAddPlace={handleAddPlaceClick}
+        />
         <Footer />
 
         <template className='gallery__photos'>

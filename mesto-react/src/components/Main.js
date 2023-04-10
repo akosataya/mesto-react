@@ -1,18 +1,20 @@
-function Main() {
-    function handleEditAvatarClick() {
-        const editAvatarPopup = document.querySelector('.popup_update');
-        editAvatarPopup.classList.add('.popup_opened');
-    }
+import React from "react";
 
-    function handleEditProfileClick() {
-        const editProfilePopup = document.querySelector('.popup_edit');
-        editProfilePopup.classList.add('.popup_opened');
-    }
-
-    function handleAddPlaceClick() {
-        const addPlacePopup = document.querySelector('.popup_add');
-        addPlacePopup.classList.add('.popup_opened');
-    }
+function Main({onEditProfile, onAddPlace, onEditAvatar}) {
+    // function handleEditAvatarClick() {
+    //     const editAvatarPopup = document.querySelector('.popup_update');
+    //     editAvatarPopup.classList.add('.popup_opened');
+    // }
+    //
+    // function handleEditProfileClick() {
+    //     const editProfilePopup = document.querySelector('.popup_edit');
+    //     editProfilePopup.classList.add('.popup_opened');
+    // }
+    //
+    // function handleAddPlaceClick() {
+    //     const addPlacePopup = document.querySelector('.popup_add');
+    //     addPlacePopup.classList.add('.popup_opened');
+    // }
 
     return (
         <main className='content'>
@@ -22,7 +24,7 @@ function Main() {
                         <button
                             className='profile__pic-button'
                             type='button'
-                            onClick={handleEditAvatarClick}
+                            onClick={onEditAvatar}
                         ></button>
                         <img
                             src="<%=require('./images/profile-image.jpeg')%>"
@@ -38,7 +40,7 @@ function Main() {
                                 className='profile__edit-button'
                                 type='button'
                                 aria-label='Редактировать'
-                                onClick={handleEditProfileClick}
+                                onClick={onEditProfile}
                             ></button>
                         </div>
                         <p className='profile__about'>Исследователь океана</p>
@@ -48,7 +50,7 @@ function Main() {
                     className='profile__add-button'
                     type='button'
                     aria-label='Добавить'
-                    onClick={handleAddPlaceClick}
+                    onClick={onAddPlace}
                 ></button>
             </section>
             <section
