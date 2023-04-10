@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc735d45-05cd-40a0-ad3a-110129354e12" name="Changes" comment="develop: ImagePopup was created, App and Main were modified">
+    <list default="true" id="cc735d45-05cd-40a0-ad3a-110129354e12" name="Changes" comment="develop: closeAllPopups done">
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/components/Card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto-react/src/utils/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mesto-react/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mesto-react/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/components/PopupWithForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +23,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Kj7DH7UOQIPAN6LJmegRff3n9n" />
   <component name="ProjectViewState">
@@ -34,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/anastasiakosataya/Praktikum/dev/mesto-react/mesto-react/src",
+    "last_opened_file_path": "/Users/anastasiakosataya/Praktikum/dev/mesto-react/mesto-react/src/utils",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "ide.date.format",
     "vue.rearranger.settings.migration": "true"
@@ -42,6 +43,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mesto-react/src/utils" />
       <recent name="$PROJECT_DIR$/mesto-react/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -77,7 +79,7 @@
       <updated>1674476016422</updated>
       <workItem from="1674476018054" duration="502000" />
       <workItem from="1680669375981" duration="2363000" />
-      <workItem from="1680849506303" duration="18862000" />
+      <workItem from="1680849506303" duration="23590000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680669425632</created>
@@ -114,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681115281723</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="develop: closeAllPopups done">
+      <created>1681116301775</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681116301775</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +148,7 @@
     <MESSAGE value="develop: the first components done" />
     <MESSAGE value="develop: PopupWithForm was done" />
     <MESSAGE value="develop: ImagePopup was created, App and Main were modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="develop: ImagePopup was created, App and Main were modified" />
+    <MESSAGE value="develop: closeAllPopups done" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop: closeAllPopups done" />
   </component>
 </project>
