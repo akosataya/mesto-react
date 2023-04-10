@@ -22,6 +22,17 @@ function App() {
     setIsEditAvatarPopupOpen(true);
   }
 
+  const closeAllPopups = (evt) => {
+    if (
+        evt.target.classList.contains('popup_opened') ||
+        evt.target.classList.contains('popup__close-button')
+    ) {
+      setIsEditProfilePopupOpen(false);
+      setIsAddPlacePopupOpen(false);
+      setIsEditAvatarPopupOpen(false);
+    }
+  }
+
   return (
     <div className='App'>
       <div className='page'>

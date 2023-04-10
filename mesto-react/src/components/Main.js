@@ -27,7 +27,7 @@ function Main({onEditProfile, onAddPlace, onEditAvatar}) {
                             onClick={onEditAvatar}
                         ></button>
                         <img
-                            src="<%=require('./images/profile-image.jpeg')%>"
+                            // src="<%=require('./images/profile-image.jpeg')%>"
                             alt='Ваш аватар'
                             className='profile__pic-avatar'
                             loading='eager'
