@@ -2,6 +2,7 @@ import '../index.css';
 import Main from './Main';
 import Header from './Header';
 import Footer from './Footer';
+import PopupWithForm from "./PopupWithForm";
 
 function App() {
   return (
