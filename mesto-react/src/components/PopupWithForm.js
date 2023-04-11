@@ -21,6 +21,11 @@ function PopupWithForm (props) {
                 >
                     {props.children}
                 </form>
+                <button
+                    className='popup__save'
+                    type='submit'
+                >{props.buttontext}
+                </button>
             </div>
         </div>
     );

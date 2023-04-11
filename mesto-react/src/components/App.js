@@ -4,12 +4,15 @@ import Main from './Main';
 import Header from './Header';
 import Footer from './Footer';
 import PopupWithForm from "./PopupWithForm";
+import ImagePopup from "./ImagePopup";
 import {api} from '../utils/Api';
 
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState({});
+  const [isCardPopupOpen, setIsCardPopupOpen] = useState(false);
 
   const handleEditProfileClick = () => {
     setIsEditProfilePopupOpen(true);
@@ -23,6 +26,11 @@ function App() {
     setIsEditAvatarPopupOpen(true);
   }
 
+  const handleCardClick = (card) => {
+    setIsCardPopupOpen(true);
+    setSelectedCard(card);
+  }
+
   const closeAllPopups = (evt) => {
     if (
         evt.target.classList.contains('popup_opened') ||
@@ -31,6 +39,7 @@ function App() {
       setIsEditProfilePopupOpen(false);
       setIsAddPlacePopupOpen(false);
       setIsEditAvatarPopupOpen(false);
+      setIsCardPopupOpen(false);
     }
   }
 
@@ -46,10 +55,17 @@ function App() {
           setUserDescription(user.about);
           setUserAvatar(user.avatar);
 
-          // cardsSection.renderItems(cards);
+          setCards(
+              cards.map((card) => ({
+                cardId: card._id,
+                cardName: card.name,
+                cardImg: card.link,
+                cardLikes: card.likes,
+              }))
+          )
         })
         .catch((err) => console.log(err));
-  })
+  }, []);
 
   return (
     <div className='App'>
@@ -62,6 +78,8 @@ function App() {
             userName={userName}
             userDescription={userDescription}
             userAvatar={userAvatar}
+            cards={cards}
+            onCardClick={handleCardClick}
         />
         <Footer />
 
@@ -71,6 +89,7 @@ function App() {
           isOpen={isEditProfilePopupOpen}
           title='Редактировать профиль'
           onClose={closeAllPopups}
+          buttontext='Сохранить'
         >
           <input
               defaultValue={userName}
@@ -96,12 +115,6 @@ function App() {
               required
           />
           <span className='popup__text-error about-input-error'></span>
-          <button
-              className='popup__save'
-              type='submit'
-              aria-label='Сохранить'
-          >Сохранить
-          </button>
         </PopupWithForm>
 
         <PopupWithForm
@@ -109,10 +122,8 @@ function App() {
           isOpen={isEditAvatarPopupOpen}
           title='Обновить аватар'
           onClose={closeAllPopups}
+          buttontext='Сохранить'
         >
-          {/*Попап обновления аватара*/}
-          {/*<div className='popup popup_update'>*/}
-
           <input
               defaultValue={userAvatar}
               id='avatar-input'
@@ -123,12 +134,6 @@ function App() {
               required
           />
           <span className='popup__text-error avatar-input-error'></span>
-          <button
-              className='popup__save'
-              type='submit'
-              aria-label='Сохранить'
-          >Сохранить
-          </button>
         </PopupWithForm>
 
         <PopupWithForm
@@ -136,10 +141,8 @@ function App() {
           isOpen={isAddPlacePopupOpen}
           title='Новое место'
           onClose={closeAllPopups}
+          buttontext='Создать'
         >
-          {/*Попап добавления фотокарточки*/}
-          {/*<div className='popup popup_add'>*/}
-
           <input
               id='add-name-input'
               className='popup__input popup__input_add_name'
@@ -160,38 +163,14 @@ function App() {
               required
           />
           <span className='popup__text-error add-link-input-error'></span>
-          <button
-              className='popup__save'
-              type='submit'
-              aria-label='Создать'
-          >Создать
-          </button>
         </PopupWithForm>
 
-        <template className='gallery__photos'>
-          <li className='gallery__item'>
-            <img
-                className='gallery__photo'
-                alt='Фотокарточка'
-            />
-              <div className='gallery__description'>
-                <h2 className='gallery__title'></h2>
-                <div className='gallery__like'>
-                  <button
-                      className='gallery__like-button'
-                      type='button'
-                      aria-label='Лайк'
-                  ></button>
-                  <p className='gallery__like-counter'></p>
-                </div>
-              </div>
-              <button
-                  className='gallery__delete-button'
-                  type='button'
-                  aria-label='Мусорка'
-              ></button>
-          </li>
-        </template>
+        <ImagePopup
+          isOpen={isCardPopupOpen}
+          card={selectedCard}
+          onClose={closeAllPopups}
+        >
+        </ImagePopup>
       </div>
     </div>
   );

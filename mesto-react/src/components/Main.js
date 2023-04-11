@@ -1,13 +1,7 @@
 import React from "react";
+import Card from "./Card";
 
-function Main({
-    onEditProfile,
-    onAddPlace,
-    onEditAvatar,
-    userName,
-    userDescription,
-    userAvatar
-}) {
+function Main(props) {
     return (
         <main className='content'>
             <section className='profile'>
@@ -16,10 +10,10 @@ function Main({
                         <button
                             className='profile__pic-button'
                             type='button'
-                            onClick={onEditAvatar}
+                            onClick={props.onEditAvatar}
                         ></button>
                         <img
-                            src={userAvatar}
+                            src={props.userAvatar}
                             alt='Ваш аватар'
                             className='profile__pic-avatar'
                             loading='eager'
@@ -27,46 +21,34 @@ function Main({
                     </div>
                     <div className='profile__text'>
                         <div className='profile__info'>
-                            <h1 className='profile__name'>{userName}</h1>
+                            <h1 className='profile__name'>{props.userName}</h1>
                             <button
                                 className='profile__edit-button'
                                 type='button'
                                 aria-label='Редактировать'
-                                onClick={onEditProfile}
+                                onClick={props.onEditProfile}
                             ></button>
                         </div>
-                        <p className='profile__about'>{userDescription}</p>
+                        <p className='profile__about'>{props.userDescription}</p>
                     </div>
                 </div>
                 <button
                     className='profile__add-button'
                     type='button'
                     aria-label='Добавить'
-                    onClick={onAddPlace}
+                    onClick={props.onAddPlace}
                 ></button>
             </section>
             <section
                 className='gallery'
                 aria-label='Секция с фотографиями'
-            ></section>
-
-            {/*Попап открытия фотокарточки*/}
-            {/*<div className='popup popup_place-photo'>*/}
-            {/*    <div className='popup__photo-container'>*/}
-            {/*        <button*/}
-            {/*            className='popup__close-button popup__close-photo'*/}
-            {/*            type='button'*/}
-            {/*        ></button>*/}
-            {/*        <figure className='popup__photo-item'>*/}
-            {/*            <img*/}
-            {/*                className='popup__photo'*/}
-            {/*                src='mesto-react/src/components/App#'*/}
-            {/*                alt='Фотокарточка'*/}
-            {/*            />*/}
-            {/*            <figcaption className='popup__photo-caption'></figcaption>*/}
-            {/*        </figure>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            >
+                {props.cards.map((card) =>(
+                    <Card key={card.cardId}
+                        card={card}
+                        onCardClick={props.onCardClick} />
+                ))}
+            </section>
 
             {/*Попап подтверждения удаления фотокарточки*/}
             {/*<div className='popup popup_confirm'>*/}
