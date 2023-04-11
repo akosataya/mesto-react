@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc735d45-05cd-40a0-ad3a-110129354e12" name="Changes" comment="develop: api is connected, component Card is created">
+    <list default="true" id="cc735d45-05cd-40a0-ad3a-110129354e12" name="Changes" comment="develop: cards gallery done, project num 10 is finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/blocks/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/blocks/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/ImagePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/components/ImagePopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <workItem from="1674476018054" duration="502000" />
       <workItem from="1680669375981" duration="2363000" />
       <workItem from="1680849506303" duration="24310000" />
-      <workItem from="1681193371444" duration="3678000" />
+      <workItem from="1681193371444" duration="4456000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680669425632</created>
@@ -135,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681121061950</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="develop: cards gallery done, project num 10 is finished">
+      <created>1681197180478</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681197180478</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +163,7 @@
     <MESSAGE value="develop: ImagePopup was created, App and Main were modified" />
     <MESSAGE value="develop: closeAllPopups done" />
     <MESSAGE value="develop: api is connected, component Card is created" />
-    <option name="LAST_COMMIT_MESSAGE" value="develop: api is connected, component Card is created" />
+    <MESSAGE value="develop: cards gallery done, project num 10 is finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop: cards gallery done, project num 10 is finished" />
   </component>
 </project>
