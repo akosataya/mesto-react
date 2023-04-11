@@ -1,8 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc735d45-05cd-40a0-ad3a-110129354e12" name="Changes" comment="develop: readme is updated">
-      <change beforePath="$PROJECT_DIR$/mesto-react/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/mesto-react/.gitignore" afterDir="false" />
+    <list default="true" id="cc735d45-05cd-40a0-ad3a-110129354e12" name="Changes" comment="develop: gitignore is updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/content/content.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/footer/__copyright/footer__copyright.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/footer/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__delete-button/gallery__delete-button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__description/gallery__description.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__item/gallery__item.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__like/__like-button/_active/gallery__like-button_active.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__like/__like-button/gallery__like-button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__like/__like-counter/gallery__like-counter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__like/gallery__like.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__photo/gallery__photo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__photos/gallery__photos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/__title/gallery__title.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/gallery/gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/header/__logo/header__logo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/header/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/page/page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__close-button/popup__close-button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__container/popup__container.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__form/popup__form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__input/_type-error/popup__input_type-error.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__input/popup__input.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__photo-caption/popup__photo-caption.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__photo-container/popup__photo-container.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__photo-item/popup__photo-item.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__photo/popup__photo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__save/_inactive/popup__save_inactive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__save/popup__save.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__text-error/_visible/popup__text-error_visible.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__text-error/popup__text-error.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/__title/popup__title.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/_opened/popup_opened.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/_place-photo/popup_place-photo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/_place/popup_place_photo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/popup/popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__about/profile__about.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__add-button/profile__add-button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__data/profile__data.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__info/profile__info.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__name/profile__name.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__pic/__pic-avatar/profile__pic-avatar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__pic/__pic-button/profile__pic-button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__pic/profile__pic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/__text/profile__text.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/blocks/profile/profile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/Card.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/ImagePopup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/components/PopupWithForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/add-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/close-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/close-smallicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/delete-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/edit-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/header-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/like-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/like-button_active.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/pencil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/images/profile-image.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/utils/Api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Black.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/Inter-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/vendor/fonts/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto-react/src/vendor/normalize.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +132,9 @@
       <recent name="$PROJECT_DIR$/mesto-react/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/mesto-react/src/components" />
       <recent name="$PROJECT_DIR$/mesto-react/node_modules" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -77,7 +165,7 @@
       <workItem from="1674476018054" duration="502000" />
       <workItem from="1680669375981" duration="2363000" />
       <workItem from="1680849506303" duration="24310000" />
-      <workItem from="1681193371444" duration="4679000" />
+      <workItem from="1681193371444" duration="5043000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680669425632</created>
@@ -142,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681197966220</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="develop: gitignore is updated">
+      <created>1681198148915</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681198148915</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +266,7 @@
     <MESSAGE value="develop: api is connected, component Card is created" />
     <MESSAGE value="develop: cards gallery done, project num 10 is finished" />
     <MESSAGE value="develop: readme is updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="develop: readme is updated" />
+    <MESSAGE value="develop: gitignore is updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop: gitignore is updated" />
   </component>
 </project>
