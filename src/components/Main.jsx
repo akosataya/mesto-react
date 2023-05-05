@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import Card from "./Card";
+import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
 function Main(props) {
+    const currentUser = useContext(CurrentUserContext);
+    const { name, about, avatar } = currentUser;
+
     return (
         <main className='content'>
             <section className='profile'>
@@ -13,7 +17,7 @@ function Main(props) {
                             onClick={props.onEditAvatar}
                         ></button>
                         <img
-                            src={props.userAvatar}
+                            src={avatar}
                             alt='Ваш аватар'
                             className='profile__pic-avatar'
                             loading='eager'
@@ -21,7 +25,7 @@ function Main(props) {
                     </div>
                     <div className='profile__text'>
                         <div className='profile__info'>
-                            <h1 className='profile__name'>{props.userName}</h1>
+                            <h1 className='profile__name'>{name}</h1>
                             <button
                                 className='profile__edit-button'
                                 type='button'
@@ -29,7 +33,7 @@ function Main(props) {
                                 onClick={props.onEditProfile}
                             ></button>
                         </div>
-                        <p className='profile__about'>{props.userDescription}</p>
+                        <p className='profile__about'>{about}</p>
                     </div>
                 </div>
                 <button
