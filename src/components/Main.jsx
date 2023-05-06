@@ -48,9 +48,12 @@ function Main(props) {
                 aria-label='Секция с фотографиями'
             >
                 {props.cards.map((card) =>(
-                    <Card key={card.cardId}
+                    <Card
+                        key={card.cardId}
                         card={card}
-                        onCardClick={props.onCardClick} />
+                        onCardClick={props.onCardClick}
+                        onCardLike={props.onCardLike}
+                    />
                 ))}
             </section>
 

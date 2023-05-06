@@ -1,19 +1,14 @@
 import React, { useContext } from "react";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
-function Card ({card, onCardClick}) {
+function Card ({card, onCardClick, onCardLike, onCardDelete}) {
     const currentUser = useContext(CurrentUserContext);
 
     // Определяем, являемся ли мы владельцем текущей карточки
-    const isOwn = card.owner._id === currentUser._id;
-
-    // Далее в разметке используем переменную для условного рендеринга
-    {
-        isOwn && <button className='gallery__delete-button' onClick={handleDeleteClick} />
-    }
+    const isOwn = card.cardOwner === currentUser._id;
 
     // Определяем, есть ли у карточки лайк, поставленный текущим пользователем
-    const isLiked = card.likes.some(i => i._id === currentUser._id);
+    const isLiked = card.cardLikes.some(i => i._id === currentUser._id);
 
     // Создаём переменную, которую после зададим в `className` для кнопки лайка
     const cardLikeButtonClassName = (
@@ -22,6 +17,14 @@ function Card ({card, onCardClick}) {
 
     function handleCardClick() {
         onCardClick(card);
+    }
+
+    function handleLikeClick() {
+        onCardLike(card);
+    }
+
+    function handleDeleteClick() {
+        onCardDelete(card);
     }
 
     return (
@@ -36,18 +39,22 @@ function Card ({card, onCardClick}) {
                 <h2 className='gallery__title'>{card.cardName}</h2>
                 <div className='gallery__like'>
                     <button
-                        className='gallery__like-button'
+                        className={cardLikeButtonClassName}
                         type='button'
                         aria-label='Лайк'
+                        onClick={handleLikeClick}
                     ></button>
                     <p className='gallery__like-counter'>{card.cardLikes.length}</p>
                 </div>
             </div>
-            <button
+            {isOwn && (
+                <button
                 className='gallery__delete-button'
                 type='button'
                 aria-label='Мусорка'
+                onClick={handleDeleteClick}
             ></button>
+            )}
         </li>
     )
 }
