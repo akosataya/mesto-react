@@ -25,7 +25,7 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser}) {
         evt.preventDefault();
 
         onUpdateUser({
-            name: name,
+            name,
             about: description,
         });
     }
@@ -41,7 +41,7 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser}) {
             onSubmit={handleSubmit}
         >
             <input
-                value={name || ''}
+                value={name}
                 id='name-input'
                 className='popup__input popup__input_edit_name'
                 type='text'
@@ -54,7 +54,7 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser}) {
             />
             <span className='popup__text-error name-input-error'></span>
             <input
-                value={description || ''}
+                value={description}
                 id='about-input'
                 className='popup__input popup__input_edit_about'
                 type='text'

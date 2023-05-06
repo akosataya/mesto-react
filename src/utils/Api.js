@@ -55,8 +55,8 @@ export default class Api {
             method: "POST",
             headers: this._headers,
             body: JSON.stringify({
-                name: data.placeName,
-                link: data.placeLink,
+                name: data.name,
+                link: data.link,
             })
         })
             .then(this._checkResponse);
@@ -87,7 +87,7 @@ export default class Api {
     }
 
     changeLikeCardStatus(cardId, isLiked) {
-        return fetch(this._URL + `/cards/` + cardId + `_likes`, {
+        return fetch(this._URL + `/cards/` + cardId + `/likes`, {
             method: `${!isLiked ? "DELETE" : "PUT"}`,
             headers: this._headers,
         })
