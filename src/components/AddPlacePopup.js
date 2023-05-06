@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import PopupWithForm from "./PopupWithForm";
 
 function AddPlacePopup ({isOpen, onClose, onAddPlace, onLoading}) {
-    const [name, setName] = React.useState('');
-    const [link, setLink] = React.useState('');
+    const [name, setName] = useState('');
+    const [link, setLink] = useState('');
 
     function handleChangeName(evt) {
         setName(evt.target.value);
@@ -20,8 +20,6 @@ function AddPlacePopup ({isOpen, onClose, onAddPlace, onLoading}) {
             name,
             link,
         });
-        setName('');
-        setLink('');
     }
 
     return (
@@ -38,11 +36,11 @@ function AddPlacePopup ({isOpen, onClose, onAddPlace, onLoading}) {
                 className='popup__input popup__input_add_name'
                 type='text'
                 placeholder='Название'
-                name='placeName'
+                name='name'
                 minLength='2'
                 maxLength='30'
                 required
-                value={name}
+                value={name || ''}
                 onChange={handleChangeName}
             />
             <span className='popup__text-error add-name-input-error'></span>
@@ -51,9 +49,9 @@ function AddPlacePopup ({isOpen, onClose, onAddPlace, onLoading}) {
                 className='popup__input popup__input_add_link'
                 type='url'
                 placeholder='Ссылка на картинку'
-                name='placeLink'
+                name='link'
                 required
-                value={link}
+                value={link || ''}
                 onChange={handleChangeLink}
             />
             <span className='popup__text-error add-link-input-error'></span>
