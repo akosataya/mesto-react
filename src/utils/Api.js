@@ -85,6 +85,14 @@ export default class Api {
         })
             .then(this._checkResponse);
     }
+
+    changeLikeCardStatus(cardId, isLiked) {
+        return fetch(this._URL + `/cards/` + cardId + `_likes`, {
+            method: `${!isLiked ? "DELETE" : "PUT"}`,
+            headers: this._headers,
+        })
+            .then(this._checkResponse);
+    }
 }
 
 export const api = new Api({

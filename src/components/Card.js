@@ -5,10 +5,10 @@ function Card ({card, onCardClick, onCardLike, onCardDelete}) {
     const currentUser = useContext(CurrentUserContext);
 
     // Определяем, являемся ли мы владельцем текущей карточки
-    const isOwn = card.cardOwner === currentUser._id;
+    const isOwn = card.owner._id === currentUser._id;
 
     // Определяем, есть ли у карточки лайк, поставленный текущим пользователем
-    const isLiked = card.cardLikes.some(i => i._id === currentUser._id);
+    const isLiked = card.likes.some(i => i._id === currentUser._id);
 
     // Создаём переменную, которую после зададим в `className` для кнопки лайка
     const cardLikeButtonClassName = (
@@ -28,15 +28,15 @@ function Card ({card, onCardClick, onCardLike, onCardDelete}) {
     }
 
     return (
-        <li className='gallery__item' key={card.cardId}>
+        <li className='gallery__item' key={card._id}>
             <img
                 className='gallery__photo'
-                alt={card.cardName}
-                src={card.cardImg}
+                alt={card.name}
+                src={card.link}
                 onClick={handleCardClick}
             />
             <div className='gallery__description'>
-                <h2 className='gallery__title'>{card.cardName}</h2>
+                <h2 className='gallery__title'>{card.name}</h2>
                 <div className='gallery__like'>
                     <button
                         className={cardLikeButtonClassName}
@@ -44,7 +44,7 @@ function Card ({card, onCardClick, onCardLike, onCardDelete}) {
                         aria-label='Лайк'
                         onClick={handleLikeClick}
                     ></button>
-                    <p className='gallery__like-counter'>{card.cardLikes.length}</p>
+                    <p className='gallery__like-counter'>{card.likes.length}</p>
                 </div>
             </div>
             {isOwn && (

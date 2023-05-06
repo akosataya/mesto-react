@@ -12,10 +12,10 @@ function ImagePopup ({isOpen, card, onClose}) {
                 <figure className='popup__photo-item'>
                     <img
                         className='popup__photo'
-                        src={card.cardImg}
-                        alt={card.cardName}
+                        src={card.link}
+                        alt={card.name}
                     />
-                    <figcaption className='popup__photo-caption'>{card.cardName}</figcaption>
+                    <figcaption className='popup__photo-caption'>{card.name}</figcaption>
                 </figure>
             </div>
         </div>

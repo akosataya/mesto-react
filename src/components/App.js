@@ -6,6 +6,8 @@ import PopupWithForm from "./PopupWithForm";
 import ImagePopup from "./ImagePopup";
 import {api} from '../utils/Api';
 import {CurrentUserContext} from "../contexts/CurrentUserContext";
+import EditProfilePopup from "./EditProfilePopup";
+import EditAvatarPopup from "./EditAvatarPopup";
 
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
@@ -59,15 +61,15 @@ function App() {
           setCurrentUser(user);
 
 
-          setCards(
-              cards.map((card) => ({
-                cardId: card._id,
-                cardName: card.name,
-                cardImg: card.link,
-                cardLikes: card.likes,
-                cardOwner: card.owner._id,
-              }))
-          )
+          setCards([...cards]);
+        //       cards.map((card) => ({
+        //         cardId: card._id,
+        //         cardName: card.name,
+        //         cardImg: card.link,
+        //         cardLikes: card.likes,
+        //         cardOwner: card.owner._id,
+        //       }))
+        //   )
         })
         .catch((err) => console.log(err));
   }, []);
@@ -78,14 +80,28 @@ function App() {
 
     // Отправляем запрос в API и получаем обновлённые данные карточки
     api
-      .changeLikeCardStatus(card.cardId, !isLiked)
+      .changeLikeCardStatus(card._id, !isLiked)
       .then((newCard) => {
-        setCards((state) => state.map((c) => c._id === card.cardId ? newCard : c));
+        setCards((state) => state.map((c) => c._id === card._id ? newCard : c));
     });
   }
 
   function handleCardDelete(card) {
-    
+    const cardId = card._id;
+    api
+      .deleteCard(cardId)
+      .then(() => {
+        setCards((state) => state.filter((c) => c._id !== cardId));
+      });
+  }
+
+  function handleUpdateUser(newUserInfo) {
+    api
+      .setNewUserInfo(newUserInfo)
+      .then((data) => {
+        setCurrentUser(data);
+        setIsEditProfilePopupOpen(false);
+      })
   }
 
   return (
@@ -108,39 +124,11 @@ function App() {
           <Footer />
 
           {/* Edit profile popup */}
-          <PopupWithForm
-            name='name'
-            className='edit'
+          <EditProfilePopup
             isOpen={isEditProfilePopupOpen}
-            title='Редактировать профиль'
             onClose={closeAllPopups}
-            buttontext='Сохранить'
-          >
-            <input
-                defaultValue={userName}
-                id='name-input'
-                className='popup__input popup__input_edit_name'
-                type='text'
-                placeholder='Имя'
-                name='name'
-                minLength='2'
-                maxLength='40'
-                required
-            />
-            <span className='popup__text-error name-input-error'></span>
-            <input
-                defaultValue={userDescription}
-                id='about-input'
-                className='popup__input popup__input_edit_about'
-                type='text'
-                placeholder='О себе'
-                name='about'
-                minLength='2'
-                maxLength='200'
-                required
-            />
-            <span className='popup__text-error about-input-error'></span>
-          </PopupWithForm>
+            onUpdateUser={handleUpdateUser}
+          />
 
           {/* Update profile avatar popup */}
           <PopupWithForm
