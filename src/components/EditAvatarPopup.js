@@ -18,8 +18,6 @@ function EditAvatarPopup({isOpen, onClose, onUpdateAvatar, onLoading}) {
         });
     }
 
-
-
     return (
         <PopupWithForm
         className='update'
